@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "Bash(gh issue view:*)",
+      "Bash(uv run:*)",
+      "WebSearch",
+      "Bash(gh api:*)",
+      "Bash(docker compose:*)",
+      "Bash(docker ps:*)"
+    ]
+  }
+}
