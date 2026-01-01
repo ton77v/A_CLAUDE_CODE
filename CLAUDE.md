@@ -35,7 +35,7 @@ Default assumption: the user is **senior**, time-constrained, and optimizing for
 
 BEFORE fixing the bug we need to reproduce the issue in tests & add better handling
 - we should see WHAT exactly & WHERE went wrong without looking at all these verbose standard output
-- e.g. if we once got say, Network error @ S3 Client initiation, we should handlers for Network error (explain what exactly went wrong) & general Error (just clearly say where the issue is)
+- e.g. if we once got say, Network error @ S3 Client initiation, we should handlers for Network error (explain what exactly went wrong) & general Error (just say that XXX error happened while initiating S3 Client)
 
 
 #### Excessive comments
@@ -99,6 +99,11 @@ When writing tests with patches, ensure all the mocks are used
 - **Double-tab indentation**
 - Avoid `any`
 - Be explicit with return types
+
+### Frontend
+
+- Use SASS
+- Libraries like Tailwind instead of custom rules when possible
 
 ### Dev & Infra
 
