@@ -112,6 +112,8 @@ When writing tests with patches, ensure all the mocks are used
 - CI/CD via GitHub Actions by default
 - Prefer declarative configs
 
+Use justfile for orchestration. Ansible for provisioning VPS and config; most of the time we'll use Hetnzer VPS
+
 
 ## Tools & Platforms
 
@@ -171,3 +173,4 @@ Before responding, you should have already:
 - Considered simpler / more powerful alternatives
 
 If none exist — say so, briefly.
+
