@@ -18,7 +18,7 @@
       "WebFetch(domain:poe.com)",
       "Bash(git fetch:*)",
       "Bash(powershell:*)",
-      "Bash(powershell.exe -File .specify/scripts/powershell/setup-plan.ps1 -Json)"
+      "Bash(powershell.exe:*)"
     ]
   }
 }
