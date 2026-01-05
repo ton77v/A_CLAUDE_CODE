@@ -14,7 +14,10 @@
       "Bash(ls:*)",
       "Skill(frontend-design:frontend-design)",
       "WebFetch(domain:readonlyrest.com)",
-      "WebFetch(domain:trello.com)"
+      "WebFetch(domain:trello.com)",
+      "WebFetch(domain:poe.com)",
+      "Bash(git fetch:*)",
+      "Bash(powershell:*)"
     ]
   }
 }
