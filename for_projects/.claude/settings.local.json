@@ -20,7 +20,14 @@
       "Bash(powershell:*)",
       "Bash(powershell.exe:*)",
       "Bash(mkdir:*)",
-      "Bash(pwsh:*)"
+      "Bash(pwsh:*)",
+      "Bash(git rev-parse:*)",
+      "Bash(Select-String:*)",
+      "Bash(Select-Object:*)",
+      "Bash(just:*)",
+      "Bash(echo:*)",
+      "Bash(git checkout:*)",
+      "Bash(git -C C:/Users/ton999/PYTHON/1account checkout specs/001-mvp-invoicing-saas/tasks.md)"
     ]
   }
 }
