@@ -27,7 +27,10 @@
       "Bash(just:*)",
       "Bash(echo:*)",
       "Bash(git checkout:*)",
-      "Bash(git -C C:/Users/ton999/PYTHON/1account checkout specs/001-mvp-invoicing-saas/tasks.md)"
+      "Bash(git -C:*)",
+      "Bash(set PYTHONPATH=:*)",
+      "Bash(findstr:*)",
+      "Bash($env:PYTHONPATH=:*)"
     ]
   }
 }
