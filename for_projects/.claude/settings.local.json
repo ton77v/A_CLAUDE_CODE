@@ -31,12 +31,13 @@
       "Bash(git -C:*)",
       "Bash(set PYTHONPATH=:*)",
       "Bash(findstr:*)",
-      "Bash($env:PYTHONPATH=:*)",
       "Bash(docker-compose build:*)",
       "Bash(docker-compose logs:*)",
       "Bash(chmod:*)",
       "Skill(frontend-design)",
-      "Bash(timeout 10 uv run:*)"
-    ]
+      "Bash(timeout 10 uv run:*)",
+      "Bash($env:PYTHONPATH=*)",
+      "Bash(PYTHONPATH=src uv run:*)"
+    ],
   }
 }
