@@ -36,10 +36,14 @@
       "Bash(chmod:*)",
       "Skill(frontend-design)",
       "Bash(timeout 10 uv run:*)",
+      "Bash(cat:*)",
+      "Bash(.git/hooks/pre-commit)",
+      "Bash(tail:*)",
       "Bash($env:PYTHONPATH=*)",
       "Bash(PYTHONPATH=src uv run:*)",
       "Bash(python -m json.tool:*)",
-      "Bash(sed:*)"
+      "Bash(sed:*)",
+      "WebFetch(domain:*)"
     ],
   }
 }
