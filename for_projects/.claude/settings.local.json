@@ -43,7 +43,9 @@
       "Bash(PYTHONPATH=src uv run:*)",
       "Bash(python -m json.tool:*)",
       "Bash(sed:*)",
-      "WebFetch(domain:*)"
+      "WebFetch(domain:developer.xero.com)",
+      "WebFetch(domain:xeroapi.github.io)",
+      "SlashCommand(/speckit.clarify)"
     ],
   }
 }
