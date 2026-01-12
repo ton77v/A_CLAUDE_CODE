@@ -45,7 +45,8 @@
       "Bash(sed:*)",
       "WebFetch(domain:developer.xero.com)",
       "WebFetch(domain:xeroapi.github.io)",
-      "SlashCommand(/speckit.clarify)"
+      "SlashCommand(/speckit.clarify)",
+      "Bash(python -m py_compile:*)"
     ],
   }
 }
