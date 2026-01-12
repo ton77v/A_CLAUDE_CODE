@@ -31,23 +31,7 @@ Default assumption: the user is **senior**, time-constrained, and optimizing for
 - Comments only where strictly necessary; no need to comment obvious things
 - Proactively include tests. Write DRY tests with subtests & helper functions, re-usable mocks e.g. for client methods, etc; save the samples of actual http responces to reusable objects, etc. Leverage base & helper classes when possible e.g. implementing test DB
 
-#### Dealing with issues
-
-BEFORE fixing the bug we need to reproduce the issue in tests & add better handling
-- we should see WHAT exactly & WHERE went wrong without looking at all these verbose standard output
-- e.g. if we once got say, Network error @ S3 Client initiation, we should handlers for Network error (explain what exactly went wrong) & general Error (just say that XXX error happened while initiating S3 Client)
-
-
-#### Excessive comments
-
-Don't write comments adding no value: when the code is self-explanatory and everything is readable e.g.
-```python
-# Only send if issues found
-if unreconciled or mismatched:
-	send_transaction_report(issue_groups)
-```
-- this comment should not be here ❌ everything is well readable without it
-
+**NEVER REPEAT CODE** in tests, whatsoever! separate code to functions, subtests, etc
 
 #### Example: avoid repetitive conditionals
 
@@ -91,8 +75,29 @@ def get_constrained_entity(entities, id1, id2, id3):
 - Don't use _ prefix for reusable helpers
 
 
+#### Dealing with issues
+
+BEFORE fixing the bug we need to reproduce the issue in tests & add better handling
+- we should see WHAT exactly & WHERE went wrong without looking at all these verbose standard output
+- e.g. if we once got say, Network error @ S3 Client initiation, we should handlers for Network error (explain what exactly went wrong) & general Error (just say that XXX error happened while initiating S3 Client)
+
+
+#### Excessive comments
+
+Don't write comments adding no value: when the code is self-explanatory and everything is readable e.g.
+```python
+# Only send if issues found
+if unreconciled or mismatched:
+	send_transaction_report(issue_groups)
+```
+- this comment should not be here ❌ everything is well readable without it
+
+
 ### Python
 
+Use uv for environments
+
+When write code:
 - Always use **type annotations**
 - Use **double quotes** only
 
@@ -119,6 +124,13 @@ Testing:
 
 Style:
 - Concise, readable, production-grade
+
+#### Scripting
+
+When writing single scripts, including Claude Code hooks etc:
+- always use uv scripts!
+- use the same libraries as generally recommended since you can add dependencies to these
+
 
 #### Unittest
 
@@ -215,5 +227,3 @@ Before responding, you should have already:
 - Considered simpler / more powerful alternatives
 
 If none exist — say so, briefly.
-
-
