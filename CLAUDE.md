@@ -49,6 +49,48 @@ if unreconciled or mismatched:
 - this comment should not be here ❌ everything is well readable without it
 
 
+#### Example: avoid repetitive conditionals
+
+This is just an example, your code should not have any "smells", but this is very illustrative
+
+**Bad:**
+```python
+if customer_id:
+  customer = find_by_id(customer_id)
+  if not customer:
+	  raise Error(f"Not found: {customer_id}")
+elif quote_id:
+  customer = find_by_quote(quote_id)
+  if not customer:
+	  raise Error(f"Not found: {quote_id}")
+elif invoice_id:
+  customer = find_by_invoice(invoice_id)
+  if not customer:
+	  raise Error(f"Not found: {invoice_id}")
+```
+
+**Good**:
+```
+def get_constrained_entity(entities, id1, id2, id3):
+  if not (id1 or id2 or id3):
+	  return entities[0]
+
+  for entity in entities:  # ONE iteration
+	  if id1 and entity.matches_id1(id1):
+		  return entity
+	  if id2 and entity.matches_id2(id2):
+		  return entity
+	  if id3 and entity.matches_id3(id3):
+		  return entity
+
+  # ONE raise
+  raise Error(f"Not found: {id1 or id2 or id3}")
+```
+- Extract to single function
+- One iteration, one raise
+- Don't use _ prefix for reusable helpers
+
+
 ### Python
 
 - Always use **type annotations**
@@ -173,4 +215,5 @@ Before responding, you should have already:
 - Considered simpler / more powerful alternatives
 
 If none exist — say so, briefly.
+
 
