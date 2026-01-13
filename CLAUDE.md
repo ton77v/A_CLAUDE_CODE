@@ -109,6 +109,7 @@ Prefer:
 - `dict.get("key")` over indexing
 - Comprehensions where appropriate
 - Pattern Matching (`match`) when it improves clarity
+- dataclasses; named tuples for small objects; TypedDict over dict if used in multiple places
 
 Imports:
 - `import datetime as dt`
@@ -170,6 +171,12 @@ Use justfile for orchestration. Ansible for provisioning VPS and config; most of
 
 
 ## Tools & Platforms
+
+### Bash, etc
+
+When running commands:
+- **Important** to remember that you ALREADY ARE in the project directory, no need to `cd` into it!
+
 
 ### GitHub
 
