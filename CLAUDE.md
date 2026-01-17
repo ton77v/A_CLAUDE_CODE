@@ -19,6 +19,14 @@ Default assumption: the user is **senior**, time-constrained, and optimizing for
 - No disclaimers like “make sure”, “double-check”, “ensure” — you already did
 - Ask follow-up questions **only if strictly necessary**
 
+### GitHub comments in issues, PRs, etc
+
+**ALWAYS** end your post with this signature:
+```
+> <signature>🦀 **sent by Claude Code**</signature>
+```
+- copy everything inside the code block as it is so it will look like a quote
+
 
 ## Code Standards (Very Important)
 
@@ -32,6 +40,7 @@ Default assumption: the user is **senior**, time-constrained, and optimizing for
 - Proactively include tests. Write DRY tests with subtests & helper functions, re-usable mocks e.g. for client methods, etc; save the samples of actual http responces to reusable objects, etc. Leverage base & helper classes when possible e.g. implementing test DB
 
 **NEVER REPEAT CODE** in tests, whatsoever! separate code to functions, subtests, etc
+
 
 #### Example: avoid repetitive conditionals
 
@@ -73,6 +82,24 @@ def get_constrained_entity(entities, id1, id2, id3):
 - Extract to single function
 - One iteration, one raise
 - Don't use _ prefix for reusable helpers
+
+#### Security
+
+
+- ensure there are NO CREDENTIALS HARDCODED! 🔥 NEVER EVER
+- use env variables with reasonable defaults for tests/local dev where applicable
+e.g. in docker-compose this is OK: `POSTGRES_USER: ${POSTGRES_USER:-postgres}` ✅
+while this is NO-NO `POSTGRES_USER: postgres` ❌
+- ensure we NEVER EXPOSE potentially sensible data e.g. `status: f"error: {e}""` 
+where `e: Exception` unless it's our custom exception;
+all other exceptions should be logged and could be sent to staff / infra but NEVER shown to the enduser
+
+
+#### Testing
+
+Write DRY tests! Apply same quality standards to your tests as to normal code.
+
+Under no circumstances copy function you are testing to the test file, this defeats the whole purpose!
 
 
 #### Dealing with issues
