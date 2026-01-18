@@ -49,8 +49,15 @@
       "Bash(python -m py_compile:*)",
       "Bash(python:*)",
       "Bash(git diff:*)",
+      "Skill(front_design)",
       "Bash(gh pr view:*)",
-      "Bash(uv pip show:*)"
+      "Bash(uv pip show:*)",
+      "Bash(gh issue comment:*)",
+      "Bash(timeout 120 uv run:*)",
+      "Bash(timeout 30 uv run:*)",
+      "Bash(gh issue comment:*)",
+      "Bash(Measure-Object -Line)",
+      "Bash(find:*)"
     ],
   }
 }
