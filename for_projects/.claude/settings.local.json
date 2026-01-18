@@ -57,7 +57,8 @@
       "Bash(timeout 30 uv run:*)",
       "Bash(gh issue comment:*)",
       "Bash(Measure-Object -Line)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(tee:*)"
     ],
   }
 }
