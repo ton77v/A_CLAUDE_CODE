@@ -58,7 +58,10 @@
       "Bash(gh issue comment:*)",
       "Bash(Measure-Object -Line)",
       "Bash(find:*)",
-      "Bash(tee:*)"
+      "Bash(tee:*)",
+      "Bash(Get-ChildItem * -Recurse -File)",
+      "Skill(speckit.review_implementation)",
+      "Bash(PYTHONPATH=:* uv run python:*)"
     ],
   }
 }
