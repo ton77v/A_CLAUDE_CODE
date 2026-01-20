@@ -140,6 +140,8 @@ Prefer:
 
 Imports:
 - `import datetime as dt`
+- when importing from other modules in the same project USE FULL PATHS all the time!
+e.g. `from base_integrations.xero.models.xero_invoice import XeroInvoice`
 
 HTTP:
 - Use `httpx`
@@ -261,3 +263,4 @@ Before responding, you should have already:
 - Considered simpler / more powerful alternatives
 
 If none exist — say so, briefly.
+
