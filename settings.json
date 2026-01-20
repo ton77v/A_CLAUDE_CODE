@@ -1,7 +1,11 @@
 {
-  "model": "opusplan"
+  "model": "opusplan",
   "statusLine": {
     "type": "command",
     "command": "powershell -NoProfile -ExecutionPolicy Bypass -File C:\\Users\\ton999\\.claude\\statusline.ps1"
+  },
+  "env": {
+    "ENABLE_TOOL_SEARCH": "true"
   }
 }
+
