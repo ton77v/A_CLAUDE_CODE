@@ -61,7 +61,10 @@
       "Bash(tee:*)",
       "Bash(Get-ChildItem * -Recurse -File)",
       "Skill(speckit.review_implementation)",
-      "Bash(PYTHONPATH=:* uv run python:*)"
+      "Bash(PYTHONPATH=:* uv run python:*)",
+      "Bash(wc:*)",
+      "Bash(curl:*)",
+      "WebFetch(domain:localhost)"
     ],
   }
 }
