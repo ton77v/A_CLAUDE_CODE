@@ -64,7 +64,8 @@
       "Bash(PYTHONPATH=:* uv run python:*)",
       "Bash(wc:*)",
       "Bash(curl:*)",
-      "WebFetch(domain:localhost)"
+      "WebFetch(domain:localhost)",
+      "Skill(speckit.implement_og)"
     ],
   }
 }
