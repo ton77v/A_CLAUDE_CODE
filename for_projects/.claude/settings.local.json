@@ -65,7 +65,10 @@
       "Bash(wc:*)",
       "Bash(curl:*)",
       "WebFetch(domain:localhost)",
-      "Skill(speckit.implement_og)"
+      "Skill(speckit.implement_og)",
+      "Bash(set PYTHONPATH=src:*)",
+      "Bash(pip show:*)",
+      "WebFetch(domain:apscheduler.readthedocs.io)"
     ],
   }
 }
