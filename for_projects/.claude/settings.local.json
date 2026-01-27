@@ -68,7 +68,11 @@
       "Skill(speckit.implement_og)",
       "Bash(set PYTHONPATH=src:*)",
       "Bash(pip show:*)",
-      "WebFetch(domain:apscheduler.readthedocs.io)"
+      "WebFetch(domain:apscheduler.readthedocs.io)",
+      "Bash(gh pr diff:*)",
+      "Skill(dedupe)",
+      "Skill(typecheck)",
+      "Skill(stripe-best-practices)"
     ],
   }
 }
