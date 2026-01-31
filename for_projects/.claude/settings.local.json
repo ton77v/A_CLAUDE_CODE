@@ -72,7 +72,8 @@
       "Bash(gh pr diff:*)",
       "Skill(dedupe)",
       "Skill(typecheck)",
-      "Skill(stripe-best-practices)"
+      "Skill(stripe-best-practices)",
+      "Bash(PYTHONPATH=src python:*)"
     ],
   }
 }
