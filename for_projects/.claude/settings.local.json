@@ -1,6 +1,5 @@
 {
   "permissions": {
-    "defaultMode": "acceptEdits",
     "allow": [
       "WebFetch(domain:github.com)",
       "Bash(gh issue view:*)",
@@ -73,7 +72,8 @@
       "Skill(dedupe)",
       "Skill(typecheck)",
       "Skill(stripe-best-practices)",
-      "Bash(PYTHONPATH=src python:*)"
+      "Bash(PYTHONPATH=src python:*)",
+      "Bash(docker cp:*)"
     ],
   }
 }
