@@ -72,8 +72,9 @@
       "Skill(dedupe)",
       "Skill(typecheck)",
       "Skill(stripe-best-practices)",
+      "WebFetch(domain:docs.stripe.com)",
       "Bash(PYTHONPATH=src python:*)",
       "Bash(docker cp:*)"
-    ],
+    ]
   }
 }
